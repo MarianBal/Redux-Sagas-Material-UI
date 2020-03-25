@@ -17,7 +17,7 @@ export default function(state = initialState, action) {
       break;
 
     case SEARCH_MOVIES_COMPLETE:
-      return { ...state, isLoading: false, movieComplete: action.results.data };
+      return { ...state, isLoading: false, movieResults: action.results.data };
       break;
 
     default:
